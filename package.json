@@ -4,11 +4,12 @@
   "description": "Browser information lib",
   "main": "radar.js",
   "scripts": {
-    "test": "npm run-script jscs && npm run-script karma && npm run-script production",
+    "test": "npm run-script jscs && npm run-script karma && npm run-script webpack && npm run-script production",
     "jscs": "./node_modules/.bin/jscs .",
     "karma": "./node_modules/.bin/karma start",
     "server": "./node_modules/.bin/webpack-dev-server --progress --colors",
-    "production": "./node_modules/.bin/webpack -p -config webpack.prod.config.js"
+    "webpack": "./node_modules/.bin/webpack",
+    "production": "./node_modules/.bin/webpack -p --config webpack.prod.config.js"
   },
   "repository": {
     "type": "git",
@@ -43,5 +44,7 @@
     "webpack": "^1.12.0",
     "webpack-dev-server": "^1.10.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "ua-parser-js": "^0.7.9"
+  }
 }
