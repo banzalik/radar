@@ -5,19 +5,19 @@ module.exports = function (config) {
 
         basePath: '',
 
-        browsers: [ 'PhantomJS' ],
-        
+        browsers: ['PhantomJS'],
+
         singleRun: true,
 
-        frameworks: ["jasmine"],
-        
+        frameworks: ['jasmine'],
+
         reporters: ['spec', 'coverage'],
 
         coverageReporter: {
             type: 'html',
             dir: 'coverage/'
         },
-        
+
         files: [
             // all files ending in ".test"
             'tests.webpack.js'
@@ -28,7 +28,7 @@ module.exports = function (config) {
 
         preprocessors: {
             // add webpack as preprocessor
-            'tests.webpack.js': [ 'webpack', 'sourcemap', 'coverage' ]
+            'tests.webpack.js': ['webpack', 'sourcemap', 'coverage']
         },
 
         webpack: {

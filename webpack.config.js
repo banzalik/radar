@@ -5,6 +5,5 @@ module.exports = {
         path: __dirname,
         filename: 'radar.js'
     },
-    module: {
-    }
+    module: {}
 };
