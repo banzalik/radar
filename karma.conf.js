@@ -11,7 +11,7 @@ module.exports = function (config) {
 
         frameworks: ['jasmine'],
 
-        reporters: ['spec', 'coverage'],
+        reporters: ['coverage'],
 
         coverageReporter: {
             type: 'html',

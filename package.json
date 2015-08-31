@@ -4,8 +4,9 @@
   "description": "Browser information lib",
   "main": "radar.js",
   "scripts": {
-    "test": "npm run-script jscs",
+    "test": "npm run-script jscs && npm run-script karma",
     "jscs": "./node_modules/.bin/jscs .",
+    "karma": "./node_modules/.bin/karma start",
     "server": "./node_modules/.bin/webpack-dev-server --progress --colors"
   },
   "repository": {
