@@ -1,9 +1,8 @@
 /*global describe, it, expect, jasmine, spyOn, beforeEach, afterEach, beforeAll, define*/
-describe('getUa', function () {
-    it('getUa', function () {
-        var getViewportSize = require('../../lib/detectors/getViewportSize.js'),
-            karmaConfig = require('../../karma.conf.js')().screen;
+describe('getScreenSize', function () {
+    it('getScreenSize', function () {
+        var getScreenSize = require('../../lib/detectors/getScreenSize.js');
 
-        expect(getViewportSize()).toEqual([karmaConfig.width, karmaConfig.height]);
+        expect(getScreenSize()).toEqual([window.screen.width, window.screen.height]);
     });
 });
