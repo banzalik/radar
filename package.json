@@ -1,0 +1,45 @@
+{
+  "name": "radar",
+  "version": "0.0.1",
+  "description": "Browser information lib",
+  "main": "radar.js",
+  "scripts": {
+    "test": "npm run-script jscs",
+    "jscs": "./node_modules/.bin/jscs .",
+    "server": "./node_modules/.bin/webpack-dev-server --progress --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/banzalik/radar.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/banzalik/radar/issues"
+  },
+  "homepage": "https://github.com/banzalik/radar#readme",
+  "devDependencies": {
+    "jasmine": "^2.3.2",
+    "jasmine-core": "^2.3.4",
+    "jscs": "^2.1.1",
+    "jshint": "^2.8.0",
+    "jshint-stylish": "^2.0.1",
+    "json-loader": "^0.5.2",
+    "karma": "^0.13.9",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-cli": "^0.1.0",
+    "karma-coverage": "^0.5.1",
+    "karma-firefox-launcher": "^0.1.6",
+    "karma-ie-launcher": "^0.2.0",
+    "karma-jasmine": "^0.3.6",
+    "karma-opera-launcher": "^0.3.0",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "karma-safari-launcher": "^0.1.1",
+    "karma-sourcemap-loader": "^0.3.5",
+    "karma-webpack": "^1.7.0",
+    "phantomjs": "^1.9.18",
+    "webpack": "^1.12.0",
+    "webpack-dev-server": "^1.10.1"
+  },
+  "dependencies": {}
+}
