@@ -1,11 +1,13 @@
-var webpack = require('webpack');
-
 module.exports = function (config) {
-    config.set({
+    var screen = {
+        width: 1980,
+        height: 1240
+    };
+    config && config.set({
 
         basePath: '',
 
-        browsers: ['PhantomJS'],
+        browsers: ['PhantomJS_Desktop'],
 
         singleRun: true,
 
@@ -16,6 +18,15 @@ module.exports = function (config) {
         coverageReporter: {
             type: 'html',
             dir: 'coverage/'
+        },
+
+        customLaunchers: {
+            'PhantomJS_Desktop': {
+                base: 'PhantomJS',
+                options: {
+                    viewportSize: screen
+                }
+            }
         },
 
         files: [
@@ -51,4 +62,8 @@ module.exports = function (config) {
         }
 
     });
+
+    return {
+        screen: screen
+    };
 };
