@@ -99,6 +99,7 @@
         "node_modules",
         "coverage",
         "tmp",
-        "radar.js"
+        "radar.js",
+        "radar.min.js"
     ]
 }
