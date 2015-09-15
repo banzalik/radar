@@ -1,4 +1,5 @@
 /*global document, describe, it, expect, jasmine, spyOn, beforeEach, afterEach, beforeAll, define*/
+/*global describe, it, expect*/
 describe('getDocumentTitle', function () {
     it('getDocumentTitle', function () {
         var title = require('../../lib/detectors/getDocumentTitle.js')();

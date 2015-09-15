@@ -1,4 +1,4 @@
-/*global describe, it, expect, jasmine, spyOn, beforeEach, afterEach, beforeAll, define*/
+/*global describe, it, expect*/
 describe('getScreenSize', function () {
     it('getScreenSize', function () {
         var getScreenSize = require('../../lib/detectors/getScreenSize.js');

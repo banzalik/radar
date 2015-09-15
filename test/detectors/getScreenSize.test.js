@@ -1,4 +1,4 @@
-/*global describe, it, expect, jasmine, spyOn, beforeEach, afterEach, beforeAll, define*/
+/*global describe, it, expect*/
 describe('getUa', function () {
     it('getUa', function () {
         var getViewportSize = require('../../lib/detectors/getViewportSize.js'),

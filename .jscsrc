@@ -100,6 +100,7 @@
         "coverage",
         "tmp",
         "radar.js",
-        "radar.min.js"
+        "radar.min.js",
+        "lib/xpath/xpath.js"
     ]
 }

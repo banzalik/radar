@@ -1,4 +1,4 @@
-/*global describe, it, expect, jasmine, spyOn, beforeEach, afterEach, beforeAll, define*/
+/*global describe, it, expect*/
 describe('version', function () {
     it('version package.json', function () {
         var a = require('../../lib/detectors/version.js'),
